@@ -1,5 +1,5 @@
 setlocal commentstring=#%s
-setlocal comments=b:#
+setlocal comments=b:#,s1:/*,mb:*,ex:*/
 
 let &l:include = '\.include\s\+"\zs[^"]\+\ze"'
 let &l:define = '\(\.eqv\)\|\(\.macro\)\|\(\ze\i\+:\)'
