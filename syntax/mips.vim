@@ -464,7 +464,7 @@ syntax keyword mipsPseudoInstruction clear
 
 " Pseudo Directives {{{
 syntax region mipsMacroRegion matchgroup=mipsMacroDefine start=/\.macro/ end=/\.end_macro/ contains=ALL
-syntax match mipsMacroParameter /%\i\+/
+syntax match mipsMacroParameter /%\i\+/ contained
 syntax match mipsInclude /\.include/
 syntax match mipsDefine /\.eqv/
 "}}}
