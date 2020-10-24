@@ -26,9 +26,11 @@ syntax region mipsString start=/"/ skip=/\\"/ end=/"/
 
 syntax match mipsLabel /\w\+:/he=e-1
 
-syntax match mipsOperator /[-+*/%^&|~]/
+syntax match mipsOperator /[-+%^&|~]/
 syntax match mipsOperator /<</
 syntax match mipsOperator />>/
+syntax match mipsOperator +/\*\@!+
+syntax match mipsOperator +\*/\@!+
 "}}}
 
 " Registers {{{
