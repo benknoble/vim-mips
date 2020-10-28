@@ -18,8 +18,8 @@ syntax match mipsNumber /\<[-]\?\d\+\>/
 " Hex numbers
 syntax match mipsNumber /\<-\?0[xX]\x\+\>/
 " Floating-point numbers
-syntax match mipsNumber /[+-]\?\d\+\(\.\d\+\)\?\([eE][+-]\?\d\+\)\?/
-syntax match mipsNumber /[+-]\?0[xX][10]\?\.\x\+H0[xX]\x\+/
+syntax match mipsNumber /\<[+-]\?\d\+\(\.\d\+\)\?\([eE][+-]\?\d\+\)\?\>/
+syntax match mipsNumber /\<[+-]\?0[xX][10]\?\.\x\+H0[xX]\x\+\>/
 
 syntax match mipsChar /'.'/
 syntax region mipsString start=/"/ skip=/\\"/ end=/"/
